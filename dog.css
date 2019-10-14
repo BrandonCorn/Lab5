@@ -181,8 +181,10 @@ body {
 	height: 500px; 
 }
 
-[class*="MapCol-"]{
+@media only screen and (max-width: 400px){
+MapColumn,MapColumn1,MapColumn2{
 	width: 100%; 
+	}
 }
 
 #SiteMapHeader {
