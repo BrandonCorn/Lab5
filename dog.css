@@ -181,6 +181,10 @@ body {
 	height: 500px; 
 }
 
+[class*="MapCol-"]{
+	width: 100%; 
+}
+
 #SiteMapHeader {
 	font-size: 40px; 
 	margin-left: 15px; 
