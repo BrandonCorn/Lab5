@@ -57,6 +57,14 @@ body {
 	border: 2px solid #9d695a; 
 	height: 700px;  
 }
+@media screen and (max-width: 400px) {
+	#IndexColumn {
+		width: 100%;
+		float: left; 
+		box-sizing: border-box; 
+		border: 2px solid #9d695a; 
+	}
+}
 
 
 #DogPlaying {
