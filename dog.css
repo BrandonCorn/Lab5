@@ -3,6 +3,8 @@ body {
 	background-color: #8eedf7;
 }
 
+
+
 #Presentation {
 	overflow-x: hidden; 
 	
@@ -41,6 +43,11 @@ body {
 	content: ""; 
 	display: table;
 	clear: both; 
+}
+@media screen and (max-width: 400px) {
+	#row {
+		width: 100%; 
+	}
 }
 
 #IndexColumn {
