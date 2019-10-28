@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title> Home </title>
+	<link rel = "stylesheet" href = "dog.css">
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+</head>
+<body> 
+	<header>
+	<div>
+		<h1 id = "header"> <a id = "HeaderLink" href = "index.html" > A Dog's Life </a> </h2>
+	</div>
+	<nav id = "navigator"> 
+		<a id = "refs" href = "index.html" > Home </a> &nbsp;
+		<a id = "refs" href = "services.html"> Services </a> &nbsp; 
+		<a id = "refs" href = "contact.html"> Contact </a> &nbsp;
+		<a id = "refs" href = "map.html"> Map </a> &nbsp;
+		<a id = "refs" href = "selectPet.html"> Picking a Pet </a> &nbsp; 
+		<a id = "refs" href = "reservations.html"> Reservations </a>
+	</nav>
+	</header>
+</body>
+<main>
+	<div id = "row">
+		<div id = "MapColumn1">
+			<h2 id = "SiteMapHeader"> Services  </h2>
+				<table id = "PackageTable" border = "1">
+				<th> Service Name </th>
+				<th > Description </th>
+				<th > Cost </th>
+					<tr> 
+					<td > Full Groom </td>
+					<td > Includes full haircut per instruction, bath, blow dry/ brush out, teeth/ear cleaning, and
+					nailtrim </td>
+					<td > Start at &dollar;40 </td>
+				</tr>
+				<tr> 
+					<td > Sanitary Trim </td>
+					<td > Includes trim  of sanitary areas such as feet, private parts, etc., bath with blow dry/brush out, 
+					teeth/ear cleaning, and nailtrim. </td>
+					<td > Start at &dollar;35 </td>
+				</tr>
+				<tr> 
+					<td > Bath </td>
+					<td > Includes bath itself, blow-dry/brush out, teeth/ear cleaning, and nailtrim.</td>
+					<td > Start at &dollar; 25 </td>
+				</tr>
+			</table>
+		</div>
+		<div id = "MapColumn2">
+			<form class = "ReservationForm" action = "https://webdevbasics.net/scripts/pacific.php" method = "POST">
+			&nbsp; &nbsp; * First Name  <input id = "UserResInfo" type = "text" name "firstname" required> <br> <br>
+			&nbsp; &nbsp; * Last Name   <input id = "UserResInfo" type = "text" name "lastname" style = "margin-left: 22px;" required> <br> <br>
+			&nbsp; &nbsp; * Email <input id = "UserResInfo" type = "email" name "email" style = "margin-left: 56px;" required> <br> <br>
+			&nbsp; &nbsp; Phone <input id = "UserResInfo" type = "tel" name = "number" style = "margin-left: 67px;"> <br> <br>
+			&nbsp; &nbsp; Arrival Date <input id = "UserResInfo" type = "date" name = "date" style = "margin-left: 20px;"> <br> <br>
+			&nbsp; &nbsp; Nights <input id = "UserResInfo" type = "text" name = "nights stay" style = "width: 50px; margin-left: 63px;"> <br> <br>
+			&nbsp; &nbsp;  * Comments <textarea id = "UserResInfo" form = "comments" style = "vertical-align: top;" required>  </textarea> <br> <br>
+			<input style = "margin-left: 100px;" type = "submit" value = "submit" >
+			</form>
+			
+		</div>
+	</div>
+</main>
+<footer>
+	<div id = "IndexFooterDiv">
+		<a id = "SiteMapLink" href = "siteMap.html"> SiteMap </a>
+	</div>
+</footer>
+</html>
+

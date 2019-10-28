@@ -1,9 +1,7 @@
 
 body {
-	background-color: #8eedf7;
+	background-color: #acfcd9;
 }
-
-
 
 #Presentation {
 	overflow-x: hidden; 
@@ -17,13 +15,13 @@ body {
 
 #HeaderLink {
 	text-decoration: none; 
-	color: #9d695a; 
+	color: #fc6471; 
 } 
 
 #navigator {
 	text-align: center; 
 	box-sizing: border-box; 
-	border: 4px solid #9d695a; 
+	border: 4px solid #55d6be; 
 	width: 100%; 
 	height: 75px; 
 	padding: 0; 
@@ -33,7 +31,7 @@ body {
 	text-decoration: none; 
 	font-size: 30px; 
 	font-weight: bold; 
-	color: #d496a7; 
+	color: #7d5ba6; 
 	margin-right: 60px; 
 	line-height: 60px; 
 }
@@ -45,21 +43,19 @@ body {
 	clear: both; 
 }
 
-
 #IndexColumn {
 	width: 33.33%; 
 	float: left; 
 	box-sizing: border-box; 
-	border: 2px solid #9d695a; 
+	border: 2px solid #55d6be; 
 	height: 700px;  
 }
-
 
 
 #DogPlaying {
 	width: 90%; 
 	margin-top: 20px; 
-	border: 2px solid #9d695a; 
+	border: 2px solid #dddddd; 
 	border-radius: 8px;  
 	margin-left: 15px; 
 }
@@ -67,7 +63,7 @@ body {
 #DogSiteMap {
 	width: 100%; 
 	height: 100%; 
-	border: 2px solid #9d695a;
+	border: 2px solid #dddddd;
 	
 }
 
@@ -75,14 +71,14 @@ body {
 	width: 100%; 
 	height: 300px; 
 	margin-left: 20px; 
-	border: 2px solid #9d695a; 
+	border: 2px solid #dddddd; 
 	border-radius: 8px;  
 }
 
 #DogsSittingLeashes {
 	width: 100%; 
 	height: 100%; 
-	border: 2px solid #9d695a; 
+	border: 2px solid #dddddd; 
 	border-radius: 8px; 
 }
 
@@ -103,7 +99,7 @@ body {
 	width: 100%; 
 	height: 500px; 
 	box-sizing: border-box; 
-	border: 2px solid #9d695a;
+	border: 2px solid #55d6be;
 }
 
 #MapPicture {
@@ -146,7 +142,7 @@ body {
 	text-decoration: none; 
 	font-size: 22px; 
 	font-weight: bold; 
-	color: #9d695a;  
+	color: #7d5ba6;  
 	margin-left: 600px; 
 }
 
@@ -164,7 +160,7 @@ body {
 	width: 50%; 
 	float: left;
 	box-sizing: border-box; 
-	border: 2px solid #9d695a;
+	border: 2px solid #55d6be;
 	height: 500px; 
 }
 
@@ -172,19 +168,18 @@ body {
 	width: 40%; 
 	float: left; 
 	box-sizing: border-box; 
-	border: 2px solid #9d695a; 
+	border: 2px solid #55d6be; 
 	height: 500px; 
-	background-color: #a1cdf1; 
+	background-color: #7d5ba6; 
 }
 
 #MapColumn2 {
 	width: 60%; 
 	float: left; 
 	box-sizing: border-box; 
-	border: 2px solid #9d695a; 
+	border: 2px solid #55d6be; 
 	height: 500px; 
 }
-
 
 #SiteMapHeader {
 	font-size: 40px; 
@@ -216,7 +211,7 @@ body {
 	height:00px; 
 	margin-left: 20px; 
 	margin-top: 40px; 
-	border: 2px solid #9d695a; 
+	border: 2px solid #dddddd; 
 	border-radius: 8px; 
 }
 
@@ -244,7 +239,7 @@ body {
 #Terrier {
 	width: 100%; 
 	height: 100%; 
-	border: 2px solid #9d695a; 
+	border: 2px solid #dddddd; 
 	border-radius: 8px; 
 }
 
@@ -252,7 +247,7 @@ body {
 	font-size: 22px; 
 	font-weight: bold;  
 	text-decoration: none; 
-	color:#9d695a;  
+	color:#7d5ba6;  
 }
 
 #NextPageDiv {
@@ -265,7 +260,7 @@ body {
 	margin-right: 400px; 
 	margin-top: 30px; 
 	text-decoration: none; 
-	color: #9d695a;
+	color: #7d5ba6;
 	font-size: 22px; 
 	font-weight: bold; 
 }
@@ -286,24 +281,5 @@ body {
 	height: 100%; 
 	
 }
-
-#PackageTable {
-	margin-left: 20px; 
-	margin-right: 40px;
-	border: 1px solid #fc6471; 
-	color: #736e6d;
-	font-size: 18px;
-}
-
-
-
-.ReservationForm {
-	margin-left: 40px; 
-	margin-top: 40px; 
-	color: #736e6d;
-	font-size: 22px; 
-}
-
-
 
 	
