@@ -49,18 +49,25 @@
 			</table>
 		</div>
 		<div id = "MapColumn2">
-			<div> 
+			<div class = "ResImgDiv"> 
 				<img id = "PlayfulPupsLogo" src = "Pictures/playfulpups.jpg" alt = "Playful pups logo"> 
+			</div>
+			<div class = "ResInfoDiv">
 			
 			<form class = "ReservationForm" action = "https://webdevbasics.net/scripts/pacific.php" method = "POST">
-			&nbsp; &nbsp; * First Name  <input id = "UserResInfo" type = "text" name "firstname" required> <br> <br>
-			&nbsp; &nbsp; * Last Name   <input id = "UserResInfo" type = "text" name "lastname" required> <br> <br>
-			&nbsp; &nbsp; * Email <input id = "UserResInfo" type = "email" name "email" required> <br> <br>
-			&nbsp; &nbsp; Phone <input id = "UserResInfo" type = "tel" name = "number"> <br> <br>
-			&nbsp; &nbsp; * Comments <textarea id = "UserResInfo" form = "comments" style = "vertical-align:top;" required>  </textarea> <br> <br>
+			&nbsp; &nbsp; * Service <select name = "services">
+				<option value = "Full Groom"> Full Groom </option>
+				<option value = "Sanitary Trim"> Sanitary Trim </option>
+				<option value = "Bath"> Bath </option>
+			</select> <br> <br>
+			&nbsp; &nbsp; * First Name  <input type = "text" name "firstname" required> <br> <br>
+			&nbsp; &nbsp; * Last Name   <input type = "text" name "lastname" required> <br> <br>
+			&nbsp; &nbsp; * Email <input type = "email" name "email" required> <br> <br>
+			&nbsp; &nbsp; Phone <input type = "tel" name = "number"> <br> <br>
+			&nbsp; &nbsp; * Comments <textarea form = "comments" style = "vertical-align:top;" required>  </textarea> <br> <br>
 			<input style = "margin-left: 320px;" type = "submit" value = "submit" >
 			</form>
-			
+			</div>
 		</div>
 	</div>
 </main>
