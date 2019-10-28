@@ -23,13 +23,13 @@
 </body>
 <main>
 	<div id = "row">
-		<div id = "MapColumn1">
+		<div id = "MapColumn1Res">
 			<h2 id = "SiteMapHeader"> Services  </h2>
-				<table id = "PackageTable" border = "1">
+				<table class = "PackageTable" border = "1">
 				<th> Service Name </th>
 				<th > Description </th>
 				<th > Cost </th>
-					<tr> 
+				<tr> 
 					<td > Full Groom </td>
 					<td > Includes full haircut per instruction, bath, blow dry/ brush out, teeth/ear cleaning, and
 					nailtrim </td>
@@ -49,15 +49,16 @@
 			</table>
 		</div>
 		<div id = "MapColumn2">
+			<div> 
+				<img id = "PlayfulPupsLogo" src = "Pictures/playfulpups.jpg" alt = "Playful pups logo"> 
+			
 			<form class = "ReservationForm" action = "https://webdevbasics.net/scripts/pacific.php" method = "POST">
 			&nbsp; &nbsp; * First Name  <input id = "UserResInfo" type = "text" name "firstname" required> <br> <br>
-			&nbsp; &nbsp; * Last Name   <input id = "UserResInfo" type = "text" name "lastname" style = "margin-left: 22px;" required> <br> <br>
-			&nbsp; &nbsp; * Email <input id = "UserResInfo" type = "email" name "email" style = "margin-left: 56px;" required> <br> <br>
-			&nbsp; &nbsp; Phone <input id = "UserResInfo" type = "tel" name = "number" style = "margin-left: 67px;"> <br> <br>
-			&nbsp; &nbsp; Arrival Date <input id = "UserResInfo" type = "date" name = "date" style = "margin-left: 20px;"> <br> <br>
-			&nbsp; &nbsp; Nights <input id = "UserResInfo" type = "text" name = "nights stay" style = "width: 50px; margin-left: 63px;"> <br> <br>
-			&nbsp; &nbsp;  * Comments <textarea id = "UserResInfo" form = "comments" style = "vertical-align: top;" required>  </textarea> <br> <br>
-			<input style = "margin-left: 100px;" type = "submit" value = "submit" >
+			&nbsp; &nbsp; * Last Name   <input id = "UserResInfo" type = "text" name "lastname" required> <br> <br>
+			&nbsp; &nbsp; * Email <input id = "UserResInfo" type = "email" name "email" required> <br> <br>
+			&nbsp; &nbsp; Phone <input id = "UserResInfo" type = "tel" name = "number"> <br> <br>
+			&nbsp; &nbsp; * Comments <textarea id = "UserResInfo" form = "comments" style = "vertical-align:top;" required>  </textarea> <br> <br>
+			<input style = "margin-left: 320px;" type = "submit" value = "submit" >
 			</form>
 			
 		</div>
