@@ -1,23 +1,51 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-	<title> Home </title>
+	<title> Reservations </title>
 	<link rel = "stylesheet" href = "dog.css">
 	<meta charset = "utf-8">
 	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	<meta name = "keywords" content = "dogs,reservations,full,full-groom,fullgroom,full groom,groom,grooming,pup,love,Bath
+	    nailtrim,sanitary,santarytrim,sanitary trim">
+	<script type = "text/javascript">
+	  function validationCheck(){
+		  var emailCheck = document.getElementById("email").value;
+		  var ageCheck = document.getElementById("age").value;
+		  var atPos = emailCheck.indexOf("@");
+		  var perPos = emailCheck.lastIndexOf(".");
+			if (ageCheck < 18)
+			{
+				alert("Must be 18 years of age!");
+				ageCheck.focus();
+				return false;
+			}
+		  if (atPos < 1 || (perPos - atPos < 2))
+		  {
+		  	alert("Please enter correct email");
+		  	emailCheck.focus();
+			  return false;
+		  }
+		  alert("You did it!");
+		  return true;
+	  }
+		function test(){
+			var test = document.getElementById("firstname").value;
+			alert(test);
+		}
+    </script>
 </head>
-<body> 
+<body>
 	<header>
 	<div>
 		<h1 id = "header"> <a id = "HeaderLink" href = "index.html" > A Dog's Life </a> </h2>
 	</div>
-	<nav id = "navigator"> 
-		<a id = "refs" href = "index.html" > Home </a> &nbsp;
-		<a id = "refs" href = "services.html"> Services </a> &nbsp; 
-		<a id = "refs" href = "contact.html"> Contact </a> &nbsp;
-		<a id = "refs" href = "map.html"> Map </a> &nbsp;
-		<a id = "refs" href = "selectPet.html"> Picking a Pet </a> &nbsp; 
-		<a id = "refs" href = "reservations.html"> Reservations </a>
+	<nav id = "navigator">
+		<a class = "refs" href = "index.html" > Home </a> &nbsp;
+		<a class = "refs" href = "services.html"> Services </a> &nbsp;
+		<a class = "refs" href = "contact.html"> Contact </a> &nbsp;
+		<a class = "refs" href = "map.html"> Map </a> &nbsp;
+		<a class = "refs" href = "selectPet.html"> Picking a Pet </a> &nbsp;
+		<a class = "refs" href = "reservations.html"> Reservations </a>
 	</nav>
 	</header>
 </body>
@@ -29,19 +57,19 @@
 				<th> Service Name </th>
 				<th > Description </th>
 				<th > Cost </th>
-				<tr> 
+				<tr>
 					<td > Full Groom </td>
 					<td > Includes full haircut per instruction, bath, blow dry/ brush out, teeth/ear cleaning, and
 					nailtrim </td>
 					<td > Start at &dollar;40 </td>
 				</tr>
-				<tr> 
+				<tr>
 					<td > Sanitary Trim </td>
-					<td > Includes trim  of sanitary areas such as feet, private parts, etc., bath with blow dry/brush out, 
+					<td > Includes trim  of sanitary areas such as feet, private parts, etc., bath with blow dry/brush out,
 					teeth/ear cleaning, and nailtrim. </td>
 					<td > Start at &dollar;35 </td>
 				</tr>
-				<tr> 
+				<tr>
 					<td > Bath </td>
 					<td > Includes bath itself, blow-dry/brush out, teeth/ear cleaning, and nailtrim.</td>
 					<td > Start at &dollar; 25 </td>
@@ -49,32 +77,35 @@
 			</table>
 		</div>
 		<div id = "MapColumn2">
-			<div class = "ResImgDiv"> 
-				<img id = "PlayfulPupsLogo" src = "Pictures/playfulpups.jpg" alt = "Playful pups logo"> 
+			<div class = "ResImgDiv">
+				<img id = "PlayfulPupsLogo" src = "Pictures/playfulpups.jpg" alt = "Playful pups logo">
 			</div>
 			<div class = "ResInfoDiv">
-			
-			<form class = "ReservationForm" action = "https://webdevbasics.net/scripts/pacific.php" method = "POST">
+
+			<form class = "ReservationForm" id = "form" action = "https://webdevbasics.net/scripts/pacific.php" method = "POST" name = "myForm"
+				onsubmit="return validationCheck()">
 			&nbsp; &nbsp; * Service <select name = "services">
 				<option value = "Full Groom"> Full Groom </option>
 				<option value = "Sanitary Trim"> Sanitary Trim </option>
 				<option value = "Bath"> Bath </option>
 			</select> <br> <br>
-			&nbsp; &nbsp; * First Name  <input type = "text" name "firstname" required> <br> <br>
-			&nbsp; &nbsp; * Last Name   <input type = "text" name "lastname" required> <br> <br>
-			&nbsp; &nbsp; * Email <input type = "email" name "email" required> <br> <br>
-			&nbsp; &nbsp; Phone <input type = "tel" name = "number"> <br> <br>
+			&nbsp; &nbsp; * First Name  <input id = "firstname" type = "text" name "firstname" required> <br> <br>
+			&nbsp; &nbsp; * Last Name   <input id = "lastname" type = "text" name "lastname" required> <br> <br>
+			&nbsp; &nbsp; * Age <input id = "age" type = "age" name = "age"> <br> <br>
+			&nbsp; &nbsp; * Email <input id = "email" type = "email" name "email"> <br> <br>
+			&nbsp; &nbsp; * Phone <input id = "tel" type = "tel" name = "#number"> <br> <br>
 			&nbsp; &nbsp; * Comments <textarea form = "comments" style = "vertical-align:top;" required>  </textarea> <br> <br>
-			<input style = "margin-left: 320px;" type = "submit" value = "submit" >
+			<input style = "margin-left: 320px;" type = "submit" value = "submit">
 			</form>
 			</div>
 		</div>
 	</div>
 </main>
+
+
 <footer>
 	<div id = "IndexFooterDiv">
 		<a id = "SiteMapLink" href = "siteMap.html"> SiteMap </a>
 	</div>
 </footer>
 </html>
-
