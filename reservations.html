@@ -8,30 +8,42 @@
 	<meta name = "keywords" content = "dogs,reservations,full,full-groom,fullgroom,full groom,groom,grooming,pup,love,Bath
 	    nailtrim,sanitary,santarytrim,sanitary trim">
 	<script type = "text/javascript">
-	  function validationCheck(){
-		  var emailCheck = document.getElementById("email").value;
-		  var ageCheck = document.getElementById("age").value;
+	  function validationCheck(form){
+		  //var emailCheck = document.getElementById("email").value;
+		  //var ageCheck = document.getElementById("age").value;
+			var emailCheck = form.email.value;
+			var ageCheck = form.age.value;
 		  var atPos = emailCheck.indexOf("@");
 		  var perPos = emailCheck.lastIndexOf(".");
+			var firstName = form.firstname.value;
+			var lastName = form.lastname.value;
+			if (firstName == "")
+			{
+				alert("You need to enter your first name");
+				form.firstname.focus();
+				form.lastname.focus();
+				return false;
+			}
+			if (lastName == "")
+			{
+				alert("You need to enter your last name");
+				form.lastname.focus();
+				return false;
+			}
 			if (ageCheck < 18)
 			{
 				alert("Must be 18 years of age!");
-				ageCheck.focus();
+				form.age.focus();
 				return false;
 			}
 		  if (atPos < 1 || (perPos - atPos < 2))
 		  {
 		  	alert("Please enter correct email");
-		  	emailCheck.focus();
+		  	form.email.focus();
 			  return false;
 		  }
-		  alert("You did it!");
 		  return true;
 	  }
-		function test(){
-			var test = document.getElementById("firstname").value;
-			alert(test);
-		}
     </script>
 </head>
 <body>
@@ -83,14 +95,14 @@
 			<div class = "ResInfoDiv">
 
 			<form class = "ReservationForm" id = "form" action = "https://webdevbasics.net/scripts/pacific.php" method = "POST" name = "myForm"
-				onsubmit="return validationCheck()">
+				onsubmit="return validationCheck(this)">
 			&nbsp; &nbsp; * Service <select name = "services">
 				<option value = "Full Groom"> Full Groom </option>
 				<option value = "Sanitary Trim"> Sanitary Trim </option>
 				<option value = "Bath"> Bath </option>
 			</select> <br> <br>
-			&nbsp; &nbsp; * First Name  <input id = "firstname" type = "text" name "firstname" required> <br> <br>
-			&nbsp; &nbsp; * Last Name   <input id = "lastname" type = "text" name "lastname" required> <br> <br>
+			&nbsp; &nbsp; * First Name  <input id = "firstname" type = "text" name "firstname"> <br> <br>
+			&nbsp; &nbsp; * Last Name   <input id = "lastname" type = "text" name "lastname"> <br> <br>
 			&nbsp; &nbsp; * Age <input id = "age" type = "age" name = "age"> <br> <br>
 			&nbsp; &nbsp; * Email <input id = "email" type = "email" name "email"> <br> <br>
 			&nbsp; &nbsp; * Phone <input id = "tel" type = "tel" name = "#number"> <br> <br>
