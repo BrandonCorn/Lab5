@@ -7,44 +7,7 @@
 	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
 	<meta name = "keywords" content = "dogs,reservations,full,full-groom,fullgroom,full groom,groom,grooming,pup,love,Bath
 	    nailtrim,sanitary,santarytrim,sanitary trim">
-	<script type = "text/javascript">
-	  function validationCheck(form){
-		  //var emailCheck = document.getElementById("email").value;
-		  //var ageCheck = document.getElementById("age").value;
-			var emailCheck = form.email.value;
-			var ageCheck = form.age.value;
-		  var atPos = emailCheck.indexOf("@");
-		  var perPos = emailCheck.lastIndexOf(".");
-			var firstName = form.firstname.value;
-			var lastName = form.lastname.value;
-			if (firstName == "")
-			{
-				alert("You need to enter your first name");
-				form.firstname.focus();
-				form.lastname.focus();
-				return false;
-			}
-			if (lastName == "")
-			{
-				alert("You need to enter your last name");
-				form.lastname.focus();
-				return false;
-			}
-			if (ageCheck < 18)
-			{
-				alert("Must be 18 years of age!");
-				form.age.focus();
-				return false;
-			}
-		  if (atPos < 1 || (perPos - atPos < 2))
-		  {
-		  	alert("Please enter correct email");
-		  	form.email.focus();
-			  return false;
-		  }
-		  return true;
-	  }
-    </script>
+	<script type = "text/javascript" src = "FormValidation.js"> </script>
 </head>
 <body>
 	<header>
